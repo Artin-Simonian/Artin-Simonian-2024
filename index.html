@@ -182,32 +182,39 @@
     </section>
     <section id="contact-me">
       <div class="socials">
-        <h1>Socials </h1>
-        
-        <a href="https://www.linkedin.com/in/artin-simonian/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0a192f;"></i></a>
-        <i class="fa-brands fa-github fa-2xl" style="color: #0a192f;"></i>
-        <i class="fa-solid fa-envelope fa-2xl" style="color: #0a192f;"></i>
-        <i class="fa-solid fa-phone fa-2xl" style="color: #0a192f;"></i>
+        <h1>Socials</h1>
+        <a href="https://www.linkedin.com/in/artin-simonian/" target="_blank"
+          ><i class="fa-brands fa-linkedin fa-2xl" style="color: #0a192f"></i
+        ></a>
+        <i class="fa-brands fa-github fa-2xl" style="color: #0a192f"></i>
+        <i class="fa-solid fa-envelope fa-2xl" style="color: #0a192f"></i>
+        <i class="fa-solid fa-phone fa-2xl" style="color: #0a192f"></i>
       </div>
       <div class="contact-container">
         <h1>Get In Touch</h1>
-        <div class="input">
-          <input
-            class="name"
-            type="text"
-            placeholder="Full Name"
-            required
-          /><br />
-          <input
-            class="email-input"
-            type="email"
-            placeholder="Email"
-            required
-          /><br />
-          <textarea placeholder="Your Message..." name="" id=""></textarea>
-          <button>Submit</button>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+          <div class="input">
+            <input type="hidden" name="access_key" value="a1174e71-39ad-4be6-ba8b-be9477eda92a">
+
+            <input
+              class="name"
+              type="text"
+              placeholder="Full Name"
+              name="name"
+              required
+            /><br />
+            <input
+              class="email-input"
+              type="email"
+              placeholder="Email"
+              required
+            /><br />
+            <textarea placeholder="Your Message..." name="Message" required></textarea>
+            <button type="submit">Submit</button>
+          </div>
         </div>
-      </div>
+        </form>
     </section>
     <script
       src="https://kit.fontawesome.com/97037a4b97.js"
