@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #0a192f;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0a192f;
+    padding: 10px 20px;
+}
+
+.nav-bar ol {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar li {
+    margin: 0 10px;
+    list-style: none;
+}
+
+.nav-bar a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.hover:hover {
+    color: #00E2B6;
+}
+
+.resume-download:hover {
+    color: #fff;
+}
+
+.main {
+    min-height: 90vh;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.about-into {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-into img {
+    border-radius: 30%;
+    box-shadow: rgba(0, 226, 182, 0.48) 6px 2px 16px 0px, rgba(0, 226, 182, 0.8) -6px -2px 16px 0px;
+
+}
+
+.intro h1 {
+    font-size: 35px;
+}
+
+.intro h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+#about p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.about-two video {
+    border-radius: 10%;
+    height: 300px;
+    box-shadow: rgba(0, 226, 182, 0.48) 6px 2px 16px 0px, rgba(0, 226, 182, 0.8) -6px -2px 16px 0px;
+}
+
+.about-two img {
+    border-radius: 10%;
+    height: 300px;
+    box-shadow: rgba(0, 226, 182, 0.48) 6px 2px 16px 0px, rgba(0, 226, 182, 0.8) -6px -2px 16px 0px;
+}
+
+
+.about-two {
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skills {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+#column1 {
+    text-align: center;
+    width: 30%;
+    ;
+}
+
+#column2 {
+    text-align: center;
+    width: 30%;
+    ;
+}
+
+#column3 {
+    text-align: center;
+    width: 30%;
+    ;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-btn {
+    background-color: #00E2B6;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    padding: 10px 10px;
+    text-decoration: none;
+    width: 50%;
+    box-shadow: rgba(0, 226, 182, 0.48) 6px 2px 16px 0px, rgba(0, 226, 182, 0.8) -6px -2px 16px 0px;
+}
+
+.contact-btn:hover {
+    background-color: #0a192f;
+}
+
+#projects {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 20px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    align-items: center;
+
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.div3 {
+    grid-area: 3 / 1 / 4 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.div4 {
+    grid-area: 4 / 1 / 5 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.div1,
+.div2,
+.div3 {
+    margin-bottom: 20px;
+}
+
+.div1 img,
+.div2 img,
+.div3 img,
+.div4 img {
+    width: 300px;
+    margin-right: 40px;
+    border-radius: 5%;
+    box-shadow: rgba(0, 226, 182, 0.48) 6px 2px 16px 0px, rgba(0, 226, 182, 0.8) -6px -2px 16px 0px;
+}
+
+.div1 img:hover,
+.div2 img:hover,
+.div3 img:hover,
+.div4 img:hover {
+    box-shadow: rgba(255, 255, 255, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.div1 p,
+.div2 p,
+.div3 p,
+.div4 p {
+    font-size: 25px;
+}
+
+#contact-me {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.socials {
+    padding: 5px 0;
+    width: 600px;
+    background-color: #00E2B6;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 226, 182, 0.48) 6px 2px 16px 0px, rgba(0, 226, 182, 0.8) -6px -2px 16px 0px;
+    margin-bottom: 20px;
+}
+
+.socials h1{
+    text-shadow: 2px 1px #0a192f;
+}
+
+.contact-container {
+    background-color: #00E2B6;
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 226, 182, 0.48) 6px 2px 16px 0px, rgba(0, 226, 182, 0.8) -6px -2px 16px 0px;
+}
+
+.contact-container h1 {
+    text-shadow: 2px 1px #0a192f;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.input .name {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    border: #0a192f solid 3px;
+}
+
+.input .email-input {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    border: #0a192f solid 3px;
+}
+
+.input textarea {
+    border-radius: 20px;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    border: #0a192f solid 3px;
+}
+
+.input button {
+    border-radius: 20px;
+    padding: 5px 20px;
+    text-align: center;
+    background-color: #0a192f;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border: #fff 2px solid;
+    margin-top: 15px;
+}
+
+.input button:hover {
+    background-color: #fff;
+    color: #0a192f;
+    border: #0a192f 2px solid;
+}
